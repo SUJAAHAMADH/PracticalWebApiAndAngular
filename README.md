@@ -5,7 +5,7 @@ Used Factory Design Pattern approach in the .net core web api to load data based
 
 Steps to run web Api project
 -----------------------------
-You need .net core 3.1 version to build the api project
+You need .net core 3.1 version to build the api project\*
 Open the web api project in VS 2019 and build the application
 Run the application get started in your local machine. You can notice it will run in localhost(https://localhost:44387)
 

@@ -34,7 +34,7 @@ Since we are using Angular as frontend application we need to allow the external
 To do that we need to allow cors origin policy
 
 Add--> 
-```
+```c#
 services.AddCors(c =>
             {
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod()
@@ -44,7 +44,7 @@ services.AddCors(c =>
   under --> startup.cs -->void ConfigureServices(IServiceCollection services) method.
   
   Then add --> 
-  ```
+  ```c#
   app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
   ```
   under--> startup.cs -->void Configure(IApplicationBuilder app, IWebHostEnvironment env) method.

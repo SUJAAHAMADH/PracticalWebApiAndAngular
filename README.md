@@ -73,7 +73,8 @@ services.AddCors(c =>
   
    If you use 'ng g c components/temperatureconversiondetail' command it will automatically create Temperatureconversiondetail.Component.ts file and it will              automatically added to app.module.ts
    
-   Similary you can create service classes using ng g s <serviceName>
+   Similary you can create service classes using 
+   ``` ng g s <serviceName>```
             
   eg: for this project service run 'ng g s services/converter' which will create a service folder and create a converter.service.ts file inside it.
   

@@ -23,7 +23,7 @@ You need to register factory class, Iservices and service classes in startup.cs 
 
 Eg.
 
- ```
+ ```C#
 services.AddScoped<TemperatureFactory>();
             services.AddScoped<FahrenheitToOtherTempService>()
                .AddScoped<ITemperatureService, FahrenheitToOtherTempService>(s => s.GetService<FahrenheitToOtherTempService>());

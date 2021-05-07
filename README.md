@@ -21,7 +21,7 @@ Factory folder contains TemperatureFactory class for the application.
 
 You need to register factory class, Iservices and service classes in startup.cs -->void ConfigureServices(IServiceCollection services) method.
 
-Eg.  #########services.AddScoped<TemperatureFactory>();
+Eg.services.AddScoped<TemperatureFactory>();
             services.AddScoped<FahrenheitToOtherTempService>()
                .AddScoped<ITemperatureService, FahrenheitToOtherTempService>(s => s.GetService<FahrenheitToOtherTempService>());
             

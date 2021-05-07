@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <label>Select Type</label>
+            <select name="PMethod" [(ngModel)]="userselection" class="form-control">
+              <option value="">-Select-</option>
+              <option value="Celsius">Celsius</option>
+              <option value="Kelvin">Kelvin</option>
+              <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <label>Enter Value</label>
+            <input class="form-control" [(ngModel)]="value" placeholder="Enter Value">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <button class="btn btn-primary" (click)="getConvertedData()" type="submit">Convert</button>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div *ngIf="isCelsiusCoversion" class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <label>Celsius Value:</label>
+            <label>{{temperature.celsius}}</label>
+        </div>
+    </div>
+    <div *ngIf="isFahrenheitCoversion" class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <label>Fahrenheit Value:</label>
+            <label>{{temperature.fahrenheit}}</label>
+        </div>
+    </div>
+    <div *ngIf="isKelvinCoversion" class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <label>Kelvin Value:</label>
+            <label>{{temperature.kelvin}}</label>
+        </div>
+    </div>
+
+</div>

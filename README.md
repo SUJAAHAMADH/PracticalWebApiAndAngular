@@ -59,9 +59,9 @@ services.AddCors(c =>
   
   --> You need to open new terminal in vs code
   
-  --> run the command 'npm install' if you are using yarn commands run 'yarn' in the terminal
+  --> run the command ``` npm install ``` if you are using yarn commands run ``` yarn ``` in the terminal
   
- Once all the npm modules are installed successfully run 'ng serve' or 'npm start' command to up your Angular application.
+ Once all the npm modules are installed successfully run ``` ng serve ``` or ``` npm start ``` command to up your Angular application.
  
   Overview of Angular Project
   ---------------------------
@@ -71,14 +71,14 @@ services.AddCors(c =>
   
   You need to register your components inside app.module.ts
   
-   If you use 'ng g c components/temperatureconversiondetail' command it will automatically create Temperatureconversiondetail.Component.ts file and it will              automatically added to app.module.ts
+   If you use ```ng g c components/temperatureconversiondetail ``` command it will automatically create Temperatureconversiondetail.Component.ts file and it will              automatically added to app.module.ts
    
    Similary you can create service classes using 
    ``` ng g s <serviceName>```
             
-  eg: for this project service run 'ng g s services/converter' which will create a service folder and create a converter.service.ts file inside it.
+  eg: for this project service run ``` ng g s services/converter ``` which will create a service folder and create a converter.service.ts file inside it.
   
-  Similarly for models you can use 'ng g class models/tutorial --type=model' command to create model classes inside a model folder.
+  Similarly for models you can use ``` ng g class models/tutorial --type=model ``` command to create model classes inside a model folder.
   
   
   

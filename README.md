@@ -55,7 +55,7 @@ services.AddCors(c =>
   
   I have used VS code to open Angular project.
   
-  To installed npm modules which is included in package.json
+  To installed npm modules which is included in ```package.json```
   
   --> You need to open new terminal in vs code
   
@@ -67,7 +67,7 @@ services.AddCors(c =>
   ---------------------------
   You can see component Temperatureconversiondetail.Component.ts,TemperatureconversiondetailComponent.html and css for that file inside component folder.
   
-  service to retrive data from web api project is written inside service->converter.service.ts file.
+  service to retrive data from web api project is written inside service->```converter.service.ts``` file.
   
   You need to register your components inside app.module.ts
   

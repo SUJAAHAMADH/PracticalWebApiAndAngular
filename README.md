@@ -23,9 +23,11 @@ You need to register factory class, Iservices and service classes in startup.cs 
 
 Eg.
 
-```services.AddScoped<TemperatureFactory>();
+ ```
+services.AddScoped<TemperatureFactory>();
             services.AddScoped<FahrenheitToOtherTempService>()
-               .AddScoped<ITemperatureService, FahrenheitToOtherTempService>(s => s.GetService<FahrenheitToOtherTempService>());```
+               .AddScoped<ITemperatureService, FahrenheitToOtherTempService>(s => s.GetService<FahrenheitToOtherTempService>());
+ ```
             
 Since we are using Angular as frontend application we need to allow the external request to access the api.
 

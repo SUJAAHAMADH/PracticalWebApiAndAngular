@@ -27,6 +27,9 @@ jobs:
       
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.1
+        
+      - name: Restore NuGet packages
+        run: nuget restore WebAPI/WebAPI.sln
     
       - name: Build the Solution
         run: msbuild WebAPI/WebAPI.sln /p:Configuration=Release
